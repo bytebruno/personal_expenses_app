@@ -40,9 +40,9 @@ class Chart extends StatelessWidget {
   Widget build(BuildContext context) {
     print(groupedTransactionValues);
     return Card(
-        elevation: 6,
-        margin: EdgeInsets.all(20),
-        child: Padding(
+      elevation: 6,
+      margin: EdgeInsets.all(20),
+      child: Padding(
           padding: EdgeInsets.all(10),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -57,7 +57,7 @@ class Chart extends StatelessWidget {
                         : (data['amount'] as double) / totalSpending),
               );
             }).toList(),
-          ),
-        ));
+          )),
+    );
   }
 }
